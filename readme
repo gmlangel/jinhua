@@ -1,1 +1,14 @@
-似懂非懂
+/**
+ * Created by haoweirui
+ * modified on 2017/5/12
+ */
+
+#
+##zhajinhua安装
+npm install /npm i
+注：
+webpack-dev-server 需要全局安装，即npm i webpack-dev-server -g
+webpack			   需要全局安装，即npm i webpack -g
+
+###生产环境
+npm run build
