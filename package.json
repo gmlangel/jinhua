@@ -29,6 +29,7 @@
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2",
-    "webpack-sftp-client": "^1.2.1"
+    "webpack-sftp-client": "^1.2.1",
+    "n-zepto": "1.2.0"
   }
 }

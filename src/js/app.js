@@ -3,3 +3,4 @@
  */
 import "../css/main.less";
 import ReactDom from 'react-dom';
+console.log($);

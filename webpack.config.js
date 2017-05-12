@@ -14,7 +14,8 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
     devtool: 'eval-source-map',//配置开发过程使用
     entry: {
-        acPlug_log: "./src/js/plug_log.js"
+        vendor : ["./src/js/comm.js"],
+        app: "./src/js/app.js"
     },
     output: {
         path: path.resolve(__dirname, "dist"),
@@ -47,6 +48,9 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.optimize.CommonsChunkPlugin({
+            names: ["vendor"]
+        }),
         new htmlWebpackPlugin({
             title: buildTime,
             filename: 'index.html',
