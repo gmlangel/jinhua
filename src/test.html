@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script src="https://code.createjs.com/tweenjs-0.6.2.min.js"></script>
+</head>
+<body>
+<canvas id="canvasElementId" width="900" height="300" ></canvas>
+<script>
+    window.onload = function () {
+        var stage = new createjs.Stage("canvasElementId");
+        var image1 = new createjs.Bitmap("1.png"),
+            image2 = new createjs.Bitmap("2.png"),
+            image3 = new createjs.Bitmap("3.png");
+        image1.name='image1';
+        image2.name='image2';
+        image3.name='image3';
+        image1.x = 0;
+        image1.y = 0;
+        image2.x = 300;
+        image2.y = 0;
+        image3.x = 600;
+        image3.y = 0;
+//        var myGraphics = new createjs.Graphics().beginFill("#ff0000").drawCircle(0, 0, 25);
+//        var shape = stage.addChild(new createjs.Shape()).set({graphics:myGraphics, x:100, y:100, alpha:0.5});
+        var shape = new createjs.Shape();
+        shape.graphics.beginFill("#ff0000").drawCircle(0, 0, 25);
+        shape.cache(-25, -25, 50, 50);
+        console.log(shape.cache(-25, -25, 50, 50));
+        stage.addChild(shape);
+//        stage.addChildAt(image1.setTransform(100,100,0.5,0.5),0);
+//        stage.addChildAt(image2,1);
+//        stage.addChildAt(image3,2);
+//        stage.addEventListener('click',function (event) {
+//            console.log(event);
+//            stage.enableDOMEvents(false);
+//        })
+//        stage.update();
+//        createjs.Ticker.on('tick',function (evt) {
+//            console.log(evt);
+//        })
+//        createjs.Ticker.setFPS(1);
+//        console.log(createjs.Ticker.getFPS());
+//        setTimeout(function () {
+//            stage.clear(1);
+////            stage.tick();
+//        },1000)
+//        stage.setTransform(100,100,0.5,0.5).update();
+//    createjs.Ticker.addEventListener("tick", handleTick);
+//    function handleTick(event) {
+//        image.x += 10;
+//        stage.update();
+//    }
+//    alert(stage.getChildIndex(image));
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+@charset "utf-8";
+.j_menu .pop_createRoom{
+  z-index: 1;
+}
+.pop_createRoom ul{
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+.pop_createRoom ul li{
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.14rem;
+  font-family: cursive;
+}
+.pop_createRoom ul li:nth-child(1){
+  font-size: 0.18rem;
+  height: 0.2rem;
+}
+.pop_createRoom ul li:nth-child(2){
+  width: 100%;
+  height: 2rem;
+  transition: transform;
+  position: relative;
+}
+.pop_createRoom ul li:nth-child(2) div{
+  width: 0.8rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  margin: auto;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  background-position:0 -3.7735rem;
+}
+.pop_createRoom .heitao_createRoom{
+  background:url(../image/heitaoSprite.png)  no-repeat;background-size:0.8rem 16.3518rem
+}
+.pop_createRoom .hongtao_createRoom{
+  background:url(../image/hongtaoSprite.png)  no-repeat;background-size:0.8rem 16.3518rem
+}
+.pop_createRoom .huazi_createRoom{
+  background:url(../image/huaziSprite.png)  no-repeat;background-size:0.8rem 16.3518rem
+}
+.pop_createRoom ul li:nth-child(2) div:nth-child(1){
+  z-index: 1;
+  transform: rotateZ(-20deg);
+}
+.pop_createRoom ul li:nth-child(2) div:nth-child(2){
+  z-index: 2;
+  transform: rotateZ(0deg);
+}
+.pop_createRoom ul li:nth-child(2) div:nth-child(3){
+  z-index: 3;
+  transform: rotateZ(20deg);
+}
+.pop_createRoom ul li:nth-child(3){
+  height: 0.4rem;
+}
+.pop_createRoom ul li:nth-child(3) span{
+  height: 0.2rem;
+  flex-direction: row;
+}
+.pop_createRoom ul li:nth-child(3) input{
+  width: 0.5rem;
+  height: 0.15rem;
+  font-size: 0.1rem;
+}
+.pop_createRoom ul li:nth-child(4){
+  height: 0.3rem;
+}
+.pop_createRoom ul li:nth-child(4) span{
+  width: 0.6rem;
+  height: 0.25rem;
+  border-radius: 0.08rem;
+  background-color: #FF8200;
+  text-align: center;
+  line-height: 0.25rem;
+}
+.pop_createRoom ul li:nth-child(4) span:active{
+  background-color: #FFA735;
+}
+

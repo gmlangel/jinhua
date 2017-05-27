@@ -1,0 +1,104 @@
+@charset "utf-8";
+.j_menu{
+  font-size: 0.15rem;
+}
+
+.j_menu  > div,
+.j_menu  .menu_choseCon,
+.j_menu .menu_popCon{
+  width: 100%;
+  height: 100%;
+}
+
+.j_menu  .menu_choseCon,
+.j_menu .menu_popCon{
+  position: absolute;
+}
+.j_menu  .menu_choseCon{
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+}
+.j_menu .menu_choseCon > div{
+  width: 100%;
+}
+.j_menu .menu_choseCon{
+  z-index: 0;
+}
+.j_menu .menu_popCon{
+  z-index: 1;
+}
+
+.j_menu .menu_helpCon{
+  height: 0.3rem;
+  flex: 0 0 auto;
+  align-items: flex-end;
+}
+.menu_helpCon .menu_help{
+  height: 0.3rem;
+  width: 0.3rem;
+  background:url(../image/imgSprite.png) 0 -80px no-repeat;
+}
+.j_menu .menu_menuCon{
+  flex: 1 1 auto;
+}
+.j_menu .menu_menuCon > div{
+  width: 100%;
+}
+.j_menu .menu_top{
+  height: 1.5rem;
+  flex: 1 1 auto;
+}
+.j_menu .menu_bottom{
+  height: 0.5rem;
+  flex: 1 1 auto;
+}
+.j_menu .menu_middle{
+  height: 2.5rem;
+  flex: 0 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu_middle .menu_selfData,
+.menu_middle .menu_createRoom,
+.menu_middle .menu_searchRoom,
+.menu_middle .menu_startGame,
+.menu_middle .menu_gameRule{
+  width: 1.0rem;
+  height: 0.3rem;
+  cursor: pointer;
+  text-align: center;
+  line-height: 0.3rem;
+  border-radius: 0.1rem;
+  background-color: #FF8200;
+}
+
+.menu_middle .menu_selfData:active,
+.menu_middle .menu_createRoom:active,
+.menu_middle .menu_searchRoom:active,
+.menu_middle .menu_startGame:active,
+.menu_middle .menu_gameRule:active{
+  background-color: #FFA735;
+}
+
+.j_menu .menu_popCon{
+  width: 2.2rem;
+  height: 3.2rem;
+  display: none;
+  border-radius: 0.15rem;
+  background-color: rgba(245,245,220,0.8);
+}
+.j_menu .menu_popCon > div{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+
+@import "menu_selfData.less";
+@import "menu_createRoom.less";
+@import "menu_searchRoom.less";
+@import "menu_gameRule.less";

@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+@imgBase: '../image/';
+
+html,body{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {	text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+
+.jContain{
+  width: 3.2rem;
+  height: 100%;
+  visibility: hidden;
+  position: relative;
+  background:url(../image/bg_skin.png) no-repeat;
+}
+
+.jContain > div{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+}
+.jContain > .j_loading{
+  display: block;
+}
+
+.centerAll{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backImgALL{
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+//.imgSprite{background:url(../images/imgSprite.png)  no-repeat;background-size:50px 330px}
+//.用户头像{height:30px;width:30px;background-position:0 0;}
+//.开{height:50px;width:50px;background-position:0 -30px;}
+//.场局信息{height:50px;width:50px;background-position:0 -80px;}
+//.不跟{height:50px;width:50px;background-position:0 -130px;}
+//.加倍{height:50px;width:50px;background-position:0 -180px;}
+//.返回主菜单{height:50px;width:50px;background-position:0 -230px;}
+//.跟{height:50px;width:50px;background-position:0 -280px;}
+
+
+//loading
+//.pianzi{background:url(../images/pianzi.png)  no-repeat;background-size:72px 216px}
+//.loading_hd_3{height:72px;width:72px;background-position:0 0;}
+//.loading_hd_2{height:72px;width:72px;background-position:0 -72px;}
+//.loading_hd_1{height:72px;width:72px;background-position:0 -144px;}
+
+
+//heitao
+//.heitao{background:url(../images/heitao.png)  no-repeat;background-size:166px 3393px}
+//.a10{height:261px;width:166px;background-position:0 0;}
+//.a9{height:261px;width:166px;background-position:0 -261px;}
+//.a8{height:261px;width:166px;background-position:0 -522px;}
+//.a13{height:261px;width:166px;background-position:0 -783px;}
+//.a12{height:261px;width:166px;background-position:0 -1044px;}
+//.a11{height:261px;width:166px;background-position:0 -1305px;}
+//.a7{height:261px;width:166px;background-position:0 -1566px;}
+//.a3{height:261px;width:166px;background-position:0 -1827px;}
+//.a2{height:261px;width:166px;background-position:0 -2088px;}
+//.a1{height:261px;width:166px;background-position:0 -2349px;}
+//.a6{height:261px;width:166px;background-position:0 -2610px;}
+//.a5{height:261px;width:166px;background-position:0 -2871px;}
+//.a4{height:261px;width:166px;background-position:0 -3132px;}
+
+
+//hongtao
+//.hongtao{background:url(../images/hongtao.png)  no-repeat;background-size:166px 3393px}
+//.b10{height:261px;width:166px;background-position:0 0;}
+//.b9{height:261px;width:166px;background-position:0 -261px;}
+//.b8{height:261px;width:166px;background-position:0 -522px;}
+//.b13{height:261px;width:166px;background-position:0 -783px;}
+//.b12{height:261px;width:166px;background-position:0 -1044px;}
+//.b11{height:261px;width:166px;background-position:0 -1305px;}
+//.b7{height:261px;width:166px;background-position:0 -1566px;}
+//.b3{height:261px;width:166px;background-position:0 -1827px;}
+//.b2{height:261px;width:166px;background-position:0 -2088px;}
+//.b1{height:261px;width:166px;background-position:0 -2349px;}
+//.b6{height:261px;width:166px;background-position:0 -2610px;}
+//.b5{height:261px;width:166px;background-position:0 -2871px;}
+//.b4{height:261px;width:166px;background-position:0 -3132px;}
+
+//huazi
+//.huazi{background:url(../images/huazi.png)  no-repeat;background-size:166px 3391px}
+//.c10{height:260px;width:166px;background-position:0 0;}
+//.c9{height:261px;width:166px;background-position:0 -260px;}
+//.c8{height:261px;width:166px;background-position:0 -521px;}
+//.c13{height:261px;width:166px;background-position:0 -782px;}
+//.c12{height:261px;width:166px;background-position:0 -1043px;}
+//.c11{height:260px;width:166px;background-position:0 -1304px;}
+//.c7{height:261px;width:166px;background-position:0 -1565px;}
+//.c3{height:260px;width:166px;background-position:0 -1826px;}
+//.c2{height:261px;width:166px;background-position:0 -2086px;}
+//.c1{height:261px;width:166px;background-position:0 -2347px;}
+//.c6{height:261px;width:166px;background-position:0 -2608px;}
+//.c5{height:261px;width:166px;background-position:0 -2869px;}
+//.c4{height:260px;width:166px;background-position:0 -3130px;}
+
+
+//pianzi
+//.pianzi{background:url(../images/pianzi.png)  no-repeat;background-size:166px 3391px}
+//.d10{height:260px;width:166px;background-position:0 0;}
+//.d9{height:261px;width:166px;background-position:0 -260px;}
+//.d8{height:261px;width:166px;background-position:0 -521px;}
+//.d13{height:261px;width:166px;background-position:0 -782px;}
+//.d12{height:261px;width:166px;background-position:0 -1043px;}
+//.d11{height:260px;width:166px;background-position:0 -1304px;}
+//.d7{height:261px;width:166px;background-position:0 -1565px;}
+//.d3{height:260px;width:166px;background-position:0 -1826px;}
+//.d2{height:261px;width:166px;background-position:0 -2086px;}
+//.d1{height:261px;width:166px;background-position:0 -2347px;}
+//.d6{height:261px;width:166px;background-position:0 -2608px;}
+//.d5{height:261px;width:166px;background-position:0 -2869px;}
+//.d4{height:260px;width:166px;background-position:0 -3130px;}
+
+//other
+//.other{background:url(../images/other.png)  no-repeat;background-size:166px 1044px}
+//.mk{height:261px;width:166px;background-position:0 0;}
+//.sk{height:261px;width:166px;background-position:0 -261px;}
+//.bei{height:261px;width:166px;background-position:0 -522px;}
+//.bei2{height:261px;width:166px;background-position:0 -783px;}
+//
+
+
+
+
+
+
+
+@import "ySize.less";
+@import "j_loading.less";
+@import "j_menu.less";
+@import "j_game.less";
